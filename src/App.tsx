@@ -23,9 +23,9 @@ console.log(fetchedData);
       <div className="container">
         {fetchedData.map(todo=>{
           return (
-            <>
+            
             <div key={todo.id} className='todo-item'>{todo.id} TASK : {todo.title}</div>
-            </>
+            
           )
         })}
       </div>
