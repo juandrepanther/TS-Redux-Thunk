@@ -1,10 +1,10 @@
-import {configureStore} from '@reduxjs/toolkit'
-import valueReducer from './valueReducer'
+import { configureStore } from "@reduxjs/toolkit"
+import valueReducer from "./valueReducer"
 
 export const store = configureStore({
-  reducer: {
-    value: valueReducer
-  }
+ reducer: {
+  value: valueReducer
+ }
 })
 
 export type RootState = ReturnType<typeof store.getState>
